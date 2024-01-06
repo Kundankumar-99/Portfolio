@@ -1,0 +1,284 @@
+.main {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #f3f2ef;
+
+}
+
+.main .right {
+    position: static;
+    top: 0;
+    right: 0;
+}
+
+.main .right {
+    max-width: 560px;
+    padding: 41px 0 0 30px;
+    margin-top: -20px;
+    margin-right: -15px;
+    position: static;
+    background-color: #f3f2ef;
+    border-left: 6px solid #CCC;
+    right: 0;
+    top: 0;
+}
+
+.left {
+    width: 65%;
+    padding: 20px;
+}
+
+.left h2 {
+    text-align: center;
+    font-size: 48px;
+    font-family: lato;
+
+}
+
+.length {
+    display: inline;
+}
+
+.right {
+    width: 35%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .length {
+        font-size: 13px;
+    }
+
+    input[type="number"] {
+        font-size: 13.5px !important;
+        width: 17% !important;
+        height: 18px;
+    }
+
+    #dynamicImage {
+        width: 100% !important;
+        padding: 20px 10px !important;
+    }
+
+    #lengthfirst {
+        position: absolute;
+        bottom: 77% !important;
+        width: 87%;
+        z-index: 99;
+        left: 14% !important;
+    }
+
+    #lengthsecond {
+        position: absolute;
+        bottom: 71.5% !important;
+        z-index: 99;
+        left: 20% !important;
+    }
+
+    #lengththird {
+        position: absolute;
+        bottom: 69.7% !important;
+        z-index: 99;
+        left: 23% !important;
+    }
+
+    input[type="number"]#b {
+        width: 11% !important;
+        height: 16px;
+    }
+}
+
+@media only screen and (max-width: 1040px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .main .right {
+        max-width: 100% !important;
+        border-left: 0px solid #CCC !important;
+    }
+
+
+}
+
+@media only screen and (max-width: 1040px)and (min-width: 600px) {
+    #lengthfirst {
+        position: absolute;
+        bottom: 73% !important;
+        ;
+        z-index: 99;
+        left: 34% !important;
+    }
+
+    #lengthsecond {
+        position: absolute;
+        bottom: 56% !important;
+        ;
+        z-index: 99;
+        left: 30% !important;
+        ;
+    }
+
+    #lengththird {
+        position: absolute;
+        bottom: 48% !important;
+        ;
+        z-index: 99;
+        left: 33% !important;
+        ;
+    }
+}
+
+@media only screen and (max-width: 1550px) and (min-width: 1140px) {
+    #dynamicImage {
+        width: 90% !important;
+    }
+
+    #lengthfirst {
+        position: absolute;
+        bottom: 70% !important;
+        z-index: 99;
+        left: 23% !important;
+    }
+
+    #lengthsecond {
+        position: absolute;
+        bottom: 50% !important;
+        z-index: 99;
+        left: 20% !important;
+
+    }
+
+    #lengththird {
+        position: absolute;
+        bottom: 40% !important;
+        z-index: 99;
+        left: 22% !important;
+    }
+}
+
+#lengthfirst {
+    position: absolute;
+    bottom: 62%;
+    z-index: 99;
+    left: 22%;
+}
+
+#lengthsecond {
+    position: absolute;
+    bottom: 30%;
+    z-index: 99;
+    left: 22%;
+    left: 22%;
+}
+
+#lengththird {
+    position: absolute;
+    bottom: 14%;
+    z-index: 99;
+    left: 23%;
+}
+
+
+
+.simulatorproductimg {
+    text-align: center;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.simulatorproductimg img {
+    height: 436px;
+    text-align: center;
+    width: auto;
+    margin: auto;
+}
+
+#frame {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+input[type="number"] {
+    padding: 0;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    font-weight: 700;
+    width: 24%;
+    Margin-left: 20px;
+    border-radius: 0px !important;
+    border: 1px solid black;
+}
+
+#frame input[type="radio"] {
+    display: none;
+}
+
+#frame input[type="radio"]+label {
+    flex: 0 0 33%;
+    max-width: 144px;
+}
+
+#frame img {
+    max-width: 117px;
+}
+
+
+
+.radio-image {
+    display: block;
+    border-radius: 8px;
+    border: 3px solid #fff;
+    background-color: white;
+    margin: 10px 0px;
+    padding: 19px;
+}
+
+.paradesc {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: -90px;
+    font-size: 18px;
+    font-family: lato;
+    line-height: 32px;
+
+}
+
+.right h2 {
+    text-align: left;
+}
+
+#dynamicImage {
+    width: 80%;
+    background-color: white;
+    border-radius: 15px;
+    margin: 0 10%;
+    padding: 50px 10px;
+    position: relative;
+}
+
+form label {
+    font-size: 21px;
+}
+
+.inputa,
+.inputb,
+.inputc {
+    width: 70px;
+}
