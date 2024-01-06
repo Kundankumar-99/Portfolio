@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+        }
+
+        .radio-image {
+            display: inline-block;
+            margin-right: 10px;
+            cursor: pointer;
+        } */
+
+        /* .radio-image input {
+            display: none;
+        }
+
+        .radio-image img {
+            width: 100px;
+            border: 2px solid transparent;
+        }
+
+        .radio-image input:checked+img {
+            border-color: #3498db;
+        }
+
+        .form-container {
+            margin-top: 20px;
+        } */
+
+
+
+        .main {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            background-color: #f3f2ef;
+
+        }
+
+        .main .right {
+            position: static;
+            top: 0;
+            right: 0;
+        }
+
+        .main .right {
+            max-width: 560px;
+            padding: 41px 0 0 30px;
+            margin-top: -20px;
+            margin-right: -15px;
+            position: static;
+            background-color: #f3f2ef;
+            border-left: 6px solid #CCC;
+            right: 0;
+            top: 0;
+        }
+
+        .left {
+            width: 65%;
+            padding: 20px;
+        }
+
+        .left h2 {
+            text-align: center;
+            font-size: 48px;
+            font-family: lato;
+
+        }
+
+        .length {
+            display: inline;
+        }
+
+        .right {
+            width: 35%;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+        
+
+ @media only screen and (max-width: 600px)  {
+              
+    .length {
+       font-size: 13px;
+   } 
+   
+   input[type="number"] {
+     font-size: 13.5px!important;
+       width: 17%!important;
+       height: 18px;
+   }
+   #dynamicImage {
+       width: 100%!important;
+       padding: 20px 10px!important;
+   }
+   #lengthfirst {
+    position: absolute;
+       bottom: 77%!important;
+       width: 87%;
+       z-index: 99;
+       left: 14%!important;
+   }
+   #lengthsecond {
+       position: absolute;
+    bottom: 71.5%!important;
+       z-index: 99;
+       left: 20%!important;
+   }
+   #lengththird {
+       position: absolute;
+       bottom: 69.7%!important;
+       z-index: 99;
+       left: 23%!important;
+   }
+   input[type="number"]#b{
+    width: 11%!important;
+    height: 16px;
+}
+     } 
+     
+@media only screen and (max-width: 1040px){
+           .main {
+    flex-direction: column;
+}
+.left {
+    width: 100%;
+
+}
+.right {
+    width: 100%;}  
+
+        .main .right {
+         max-width: 100%!important;
+    border-left: 0px solid #CCC!important;}
+ 
+    
+}
+@media only screen and (max-width: 1040px)and (min-width: 600px)    {
+    #lengthfirst {
+     position: absolute;
+     bottom: 73%!important;;
+     z-index: 99;
+     left: 34%!important;
+ }
+ #lengthsecond {
+     position: absolute;
+     bottom: 56%!important;;
+     z-index: 99;
+     left: 30%!important;;
+ }
+ #lengththird {
+     position: absolute;
+     bottom: 48%!important;;
+     z-index: 99;
+     left: 33%!important;;
+ }
+  } 
+  @media only screen and (max-width: 1550px) and (min-width: 1140px)  {
+    #dynamicImage {
+width: 90%!important;}
+    
+#lengthfirst {
+position: absolute;
+bottom: 70%!important;
+z-index: 99;
+left: 23%!important;
+}
+#lengthsecond {
+position: absolute;
+bottom: 50%!important;
+z-index: 99;
+left: 20%!important;
+
+}
+
+#lengththird {
+position: absolute;
+bottom: 40%!important;
+z-index: 99;
+left: 22%!important;
+}}  
+
+#lengthfirst {
+    position: absolute;
+    bottom: 62%;
+    z-index: 99;
+    left: 22%;
+}
+#lengthsecond {
+    position: absolute;
+    bottom: 30%;
+    z-index: 99;
+    left: 22%;
+    left: 22%;
+}
+
+#lengththird {
+    position: absolute;
+    bottom: 14%;
+    z-index: 99;
+    left: 23%;
+} 
+
+
+
+        .simulatorproductimg {
+            text-align: center;
+            position: relative;
+            padding-bottom: 50px;
+        }
+
+        .simulatorproductimg img {
+            height: 436px;
+            text-align: center;
+            width: auto;
+            margin: auto;
+        }
+
+        #frame {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        input[type="number"] {
+            padding: 0;
+            font-size: 20px;
+            text-align: center;
+            color: black;
+            font-weight: 700;
+            width: 24%;
+            Margin-left: 20px;
+            border-radius: 0px!important;
+    border: 1px solid black;
+        }
+
+        #frame input[type="radio"] {
+            display: none;
+        }
+
+        #frame input[type="radio"]+label {
+            flex: 0 0 33%;
+            max-width: 144px;
+        }
+
+        #frame img {
+            max-width: 117px;
+        }
+
+        /* #frame input[type="radio"]:checked {
+            border: 3px solid #E6001B;
+            background-color: #B7A487;
+        } */
+
+        .radio-image {
+            display: block;
+            border-radius: 8px;
+            border: 3px solid #fff;
+            background-color: white;
+            margin: 10px 0px;
+            padding: 19px;
+        }
+
+        .paradesc {
+            width: 80%;
+            text-align: center;
+            margin: auto;
+                margin-bottom: -90px;
+            font-size: 18px;
+            font-family: lato;
+            line-height: 32px;
+           
+        }
+
+        .right h2 {
+            text-align: left;
+        }
+
+        #dynamicImage {
+            width: 80%;
+            background-color: white;
+            border-radius: 15px;
+            margin: 0 10%;
+                padding: 50px 10px;
+            position: relative;
+        }
+
+        form label {
+            font-size: 21px;
+        }
+
+        .inputa,
+        .inputb,
+        .inputc {
+            width: 70px;
+        }
+    </style>
+
+</head>
+
+
+<div class="main">
+    <div class="left">
+        <h2 class="frame--simulator-heading">
+            Frame dimension simulator
+        </h2>
+        <p class="paradesc">This is a simulator that measures the required length (ℓ) of the insertion
+            side frame from the dimensions for each
+            connector to be used.(Calculations are rounded to the nearest whole number.)</p>
+
+        <div class="form-container">
+
+            <form style="text-align: center;">
+                <div id="lengthfirst">
+                    <label for="a" class="length">Outer Length:</label>
+                    <input type="number" id="a" oninput="updateValues('a');updateC();updateC8()" class="inputa">
+                </div>
+                <br>
+                <br>
+                <div id="lengthsecond">
+                    <label for="b" class="length">Length of frame:</label>
+                    <input type="number" id="b" oninput="updateValues('b');updateC();updateC8()" class="inputb">
+                </div>
+                <br>
+                <br>
+                <div id="lengththird">
+                    <label for="c" class="length" >Inner Length:</label>
+                    <input type="number" id="c" oninput="updateValues('c');calculateC();calculateC8()" class="inputc">
+                </div>
+                <br>
+                <br>
+
+                <img id="dynamicImage"
+                    src="https://suscorpdev.wpenginepowered.com/wp-content/uploads/2023/12/simulator-dev-01.png"
+                    alt="Default Image">
+
+
+
+            </form>
+        </div>
+    </div>
+    <div class="right">
+        <h2>Select frame type</h2>
+        <div id="frame">
+            <label class="radio-image" onclick="handleRadioImageChange(this);">
+                <input id="1" type="radio" name="imageSelection"
+                    onchange="changeDifferenceValues(56, 88, 32); updateImage('https://suscorpdev.wpenginepowered.com/wp-content/uploads/2023/12/simulator-dev-01.png', '1');"
+                    checked>
+                <img src="https://suscorpdev.wpenginepowered.com/wp-content/uploads/2023/12/image1.png" alt="Image 1">
+                <p>
+                    <font style="vertical-align: inherit;">GFun frame NW</font>
+                    </font>
+                </p>
+            </label>
+
+            <label class="radio-image" onclick="handleRadioImageChange(this);">
+                    <input id="2" type="radio" name="imageSelection" onchange="changeDifferenceValues(56, 88, 32); updateImage('https://suscorpdev.wpenginepowered.com/wp-content/uploads/2023/12/simulator-dev-02.png', '2');">
+                    <img src="https://suscorpdev.wpenginepowered.com/wp-content/uploads/2023/12/Picture2-1.png" alt="Image 2">
+                <p>
+                    <font style="vertical-align: inherit;">GFun frame NL</font>
+                </p>
+            </label>
+
+
+            <label class="radio-image" onclick="handleRadioImageChange(this);">
+                <input id="3" type="radio" name="imageSelection"
+                    onchange="changeDifferenceValues(56, 88, 32); updateImage('https://suscorpdev.wpenginepowered.com/wp-content/uploads/2023/12/simulator-dev-03.png', '3');">
+                <img src="https://suscorpdev.wpenginepowered.com/wp-content/uploads/2023/12/Picture3-1.png"
+                    alt="Image 3">
+                <p>
+                    <font style="vertical-align: inherit;">GFun frame NF50</font>
+                    </font>
+                </p>
+            </label>
+
+            <label class="radio-image" onclick="handleRadioImageChange(this);">
+                <input id="4" type="radio" name="imageSelection"
+                    onchange="changeDifferenceValues(56, 61, 5); updateImage('https://suscorpdev.wpenginepowered.com/wp-content/uploads/2023/12/simulator-dev-04.png', '4');">
+                <img src="https://suscorpdev.wpenginepowered.com/wp-content/uploads/2023/12/Picture4-1.png"
+                    alt="Image 4">
+                <p>
+                    <font style="vertical-align: inherit;">GFun frame NF35</font>
+                    </font>
+                </p>
+            </label>
+
+            <label class="radio-image" onclick="handleRadioImageChange(this);">
+                <input id="5" type="radio" name="imageSelection"
+                    onchange="changeDifferenceValues(56, 97, 41); updateImage('https://suscorpdev.wpenginepowered.com/wp-content/uploads/2023/12/simulator-dev-05.png', '5');">
+                <img src="https://suscorpdev.wpenginepowered.com/wp-content/uploads/2023/12/Picture5-1.png"
+                    alt="Image 4">
+                <p>
+                    <font style="vertical-align: inherit;">GFun frame NT</font>
+                    </font>
+                </p>
+            </label>
+
+            <label class="radio-image" onclick="handleRadioImageChange(this);">
+                <input id="6" type="radio" name="imageSelection"
+                    onchange="changeDifferenceValues(56, 97, 41, 6); updateImage('https://suscorpdev.wpenginepowered.com/wp-content/uploads/2023/12/simulator-dev-06.png', '6');">
+                <img src="https://suscorpdev.wpenginepowered.com/wp-content/uploads/2023/12/Picture6-1.png"
+                    alt="Image 6">
+                <p>
+                    <font style="vertical-align: inherit;">GFun frame NH</font>
+                    </font>
+                </p>
+            </label>
+
+            <label class="radio-image" onclick="handleRadioImageChange(this);">
+                <input id="7" type="radio" name="imageSelection"
+                    onchange="changeDifferenceValues(56, 97, 41, 7); updateImage('https://suscorpdev.wpenginepowered.com/wp-content/uploads/2023/12/simulator-dev-07.png', '7');">
+                <img src="https://suscorpdev.wpenginepowered.com/wp-content/uploads/2023/12/Picture7-1.png"
+                    alt="Image 4">
+                <p>
+                    <font style="vertical-align: inherit;">GFun frame NDIN</font>
+                    </font>
+                </p>
+            </label>
+
+            <label class="radio-image" onclick="handleRadioImageChange(this);">
+                <input id="8" type="radio" name="imageSelection"
+                    onchange="changeDifferenceValues(56, 97, 41, 8); updateImage('https://suscorpdev.wpenginepowered.com/wp-content/uploads/2023/12/simulator-dev-08.png', '8');">
+                <img src="https://suscorpdev.wpenginepowered.com/wp-content/uploads/2023/12/Picture8-1.png"
+                    alt="Image 4">
+                <p>
+                    <font style="vertical-align: inherit;">GFun frame NP100</font>
+                    </font>
+                </p>
+            </label>
+
+
+            <label class="radio-image" onclick="handleRadioImageChange(this);">
+                <input id="9" type="radio" name="imageSelection"
+                    onchange="changeDifferenceValues(56, 88, 32); updateImage('https://suscorpdev.wpenginepowered.com/wp-content/uploads/2023/12/simulator-dev-09.png', '9');">
+                <img src="https://suscorpdev.wpenginepowered.com/wp-content/uploads/2023/12/image9-1.png" alt="Image 4">
+                <p>
+                    <font style="vertical-align: inherit;">GFun frame S</font>
+                    </font>
+                </p>
+            </label>
+        </div>
+    </div>
+
+
+
+    <script>
+
+        function handleRadioImageChange(radio) {
+            var radioImage = radio.closest('.radio-image');
+            var allRadioImages = document.querySelectorAll('.radio-image');
+            var isChecked = radio.querySelector('input').checked;
+            allRadioImages.forEach(function (item) {
+                item.classList.remove('checked');
+                item.style.backgroundColor = isChecked ? 'white' : '';
+            });
+            radioImage.classList.add('checked');
+            radioImage.style.backgroundColor = isChecked ? '#B7A487' : '';
+        }
+
+
+
+
+        function updateImage(newImageUrl, radioId) {
+            if (document.querySelector('input[name="imageSelection"]:checked')) {
+                document.getElementById('dynamicImage').src = newImageUrl;
+            } else {
+                document.getElementById('dynamicImage').src = 'https://suscorpdev.wpenginepowered.com/wp-content/uploads/2023/12/simulator-dev-01.png';
+            }
+
+            if (radioId === '7') {
+
+                // document.querySelector('.inputa').style.width = 'border';
+                document.getElementById("lengthsecond").style.left="4%";
+                
+            }
+
+            else {
+                document.getElementById("lengthsecond").style.left="22%";
+            }
+        //      const mediaQuery = window.matchMedia('(max-width: 400px)')
+        //   if (radioId === '7' || radioId === '8' || radioId === '9') {
+
+               
+        //   document.getElementById("lengthsecond").style.left="-20%";
+                 
+                
+        //      }
+
+        //    else {
+        //        document.getElementById("lengthsecond").style.left="20%";
+               
+
+        //     }
+
+        }
+
+
+        let ID_ = undefined;
+        function updateValues(changedField) {
+            if (ID_ == 6 || ID_ == 7 || ID_ == 8) { return }
+            var a = parseFloat(document.getElementById("a").value);
+            var b = parseFloat(document.getElementById("b").value);
+            var c = parseFloat(document.getElementById("c").value);
+
+            if (changedField === 'a') {
+                document.getElementById("b").value = a - window.differenceAB;
+                document.getElementById("c").value = a - window.differenceAC;
+            } else if (changedField === 'b') {
+                document.getElementById("a").value = b + window.differenceAB;
+                document.getElementById("c").value = b - window.differenceBC;
+            } else if (changedField === 'c') {
+                document.getElementById("a").value = c + window.differenceAC;
+                document.getElementById("b").value = c + window.differenceBC;
+            } else if (changedField === 'd') {
+                document.getElementById("a").value = d + window.differenceAD;
+                document.getElementById("b").value = d + window.differenceBD;
+            }
+        }
+
+        function changeDifferenceValues(differenceAB, differenceAC, differenceBC, id) {
+            ID_ = id;
+            if (id == 6 || id == 7 || id == 8) {
+                document.getElementById("a").value = "";
+                document.getElementById("b").value = "";
+                document.getElementById("c").value = ""
+            }
+            window.differenceAB = differenceAB;
+            window.differenceAC = differenceAC;
+            window.differenceBC = differenceBC;
+            updateValues('a');
+        }
+        window.differenceAB = 56;
+        window.differenceAC = 88;
+        window.differenceBC = 32;
+        updateValues('a');
+
+
+        function calculateC() {
+            if (ID_ == undefined || ID_ == 8) { return }
+            var c = parseFloat(document.getElementById("c").value);
+            var a = Math.round(Math.sqrt(Math.pow(c + (26.5 * 2), 2) / 2) + 31.5);
+            var b = Math.round(Math.sqrt(Math.pow(c + (26.5 * 2), 2) / 2) + 31.5);
+            document.getElementById("a").value = a;
+            document.getElementById("b").value = b;
+        }
+
+        function updateC() {
+            if (ID_ == undefined || ID_ == 8) { return }
+            var a = parseFloat(document.getElementById("a").value);
+            var b = parseFloat(document.getElementById("b").value);
+            var c = Math.round(Math.sqrt(Math.pow(a - 31.5, 2) + Math.pow(b - 31.5, 2)) - (26.5 * 2));
+            document.getElementById("c").value = c;
+        }
+
+        function calculateC8() {
+            if (ID_ == undefined || ID_ == 6 || ID_ == 7) { return }
+            var c = parseFloat(document.getElementById("c").value);
+            var a = Math.round((c + 41) / 1.41421356237 + 7.7);
+            var b = a;
+            document.getElementById("a").value = a;
+            document.getElementById("b").value = b;
+        }
+
+        function updateC8() {
+            if (ID_ == undefined || ID_ == 6 || ID_ == 7) { return }
+            var a = parseFloat(document.getElementById("a").value);
+            var b = a;
+            var c = Math.round((a - 7.7) * 1.41421356237 - 41);
+            document.getElementById("c").value = c;
+            document.getElementById("b").value = b;
+        }
+    </script>
+    </body>
+
+</html>

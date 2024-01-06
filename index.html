@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+
 </head>
+
 <body>
-    <h1>This Is My Javascript Project</h1>
-    
+    <div>
+        <h1>All Projects</h1>
+        <ul>
+
+            <li><a id="Simulatorcalculator" target="_blank">Simulatorcalculator</a></li>
+
+
+        </ul>
+    </div>
+
+    <script>
+        var isDevelopment = false; // Change this to false for production
+
+        var baseURL = isDevelopment ? '/portfolio/' : 'http://localhost:5500/';
+
+        // Now you can use baseURL to construct your links
+        var SimulatorcalculatorPageURL = baseURL + 'SimulatorProject/Simulatorcalculator.html';
+
+
+        // Get all <li> elements
+        var listItems = document.querySelectorAll('ul li');
+
+        // Iterate through each <li> element
+        listItems.forEach(function (li) {
+            // Find the <a> element inside the current <li>
+            var anchorElement = li.querySelector('a');
+
+            // If an <a> element is found, update its href attribute
+            switch (anchorElement.id) {
+                case 'Simulatorcalculator':
+                    document.querySelector('#Simulatorcalculator').setAttribute('href', SimulatorcalculatorPageURL);
+            }
+
+        });
+    </script>
 </body>
+
 </html>
