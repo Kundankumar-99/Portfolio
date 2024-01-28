@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
+<style>
+  .fixed-menu{
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+  }
+</style>
 </head>
 <body style="height: 120vh;">
 
@@ -55,21 +62,36 @@
             </form>
           </div>
         </div>
-        <div class="height">
-            text is written inside it.
-        </div>
+      
       </nav>
 
 <script>
-const secondaryMenu = document.querySelector('.secondary-menu');
 
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 0) {
-        secondaryMenu.classList.add('fixed');
+  //Function to handle the scroll event
+  function handleScroll() {
+    
+    const secondaryMenu = document.querySelector('.Secondarymenu');
+    
+    // Check if the user has scrolled down more than a certain threshold (e.g., 100 pixels)
+    if (window.scrollY > 100) {
+      // Add a CSS class to make the secondary menu fixed at the top
+      secondaryMenu.classList.add('fixed-menu');
     } else {
-        secondaryMenu.classList.remove('fixed');
+      // Remove the CSS class when the user scrolls back up
+      secondaryMenu.classList.remove('fixed-menu');
     }
-});
+  }
+
+  // Attach the scroll event listener to the window
+  window.addEventListener('scroll', handleScroll);
+
+// window.addEventListener('scroll', () => {
+//     if (window.scrollY > 0) {
+//         secondaryMenu.classList.add('fixed');
+//     } else {
+//         secondaryMenu.classList.remove('fixed');
+//     }
+// });
 
 </script>
 </body>
