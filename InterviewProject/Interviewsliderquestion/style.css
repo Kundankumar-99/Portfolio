@@ -1,0 +1,97 @@
+body {
+  font-family: Montserrat;
+  background-color: #131418;
+  color: #fff;
+  height: 50vh;
+  margin: 0;
+}
+
+.section-title {
+  text-align: center;
+  display: inline;
+}
+
+.section-title h2:before {
+  content: "";
+  position: absolute;
+  top: -93px;
+  right: 32%;
+  transform: translateX(-50%);
+  transform: rotate(90deg);
+  width: 1px;
+  height: 39%;
+  background-color: #F2A91D;
+  z-index: 1;
+}
+
+.slideshow{
+  display: flex;
+}
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  top: -93px;
+  right: 32%;
+  transform: translateX(-50%);
+  transform: rotate(90deg);
+  width: 1px;
+  height: 39%;
+  background-color: #F2A91D;
+  z-index: 1;
+}
+
+.card {
+  width: 210px;
+  /* Set the width of the card */
+  height: 351px;
+  /* Set the height of the card */
+  background-image: url('/images/Image1.jpg');
+  /* Add the path to your image */
+  background-size: cover;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  position: relative;
+  color: white;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 20px; 
+    padding: 20px; 
+  } 
+  
+
+.card-header {
+  background: #F2A91D;
+  / padding: 10px;
+  text-align: center;
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 23%;
+  padding: 7px;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+.card-header h2 {
+  margin: 0;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.card-body {
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.card-body p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.5;
+}

@@ -12,7 +12,7 @@
 <body>
     <div> Practise Exercise For Conditional Statement. </div>
     <script>
-        // let enterNumber = 55;
+        {/* // let enterNumber = 55;
         // if (enterNumber%5===0){
         //     console.log("Number is divisible by 5")
 
@@ -29,8 +29,13 @@
                 console.log("Numer Is ODD Nymber", i);
             }
 
+        } */}
 
-        }
+{/* Write a program to find maximum between two given numbers. */}
+
+
+
+
     </script>
 </body>
 

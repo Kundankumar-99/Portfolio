@@ -1,0 +1,460 @@
+.frame-child,
+.frame-item {
+  position: absolute;
+  background-color: #ebb82b;
+}
+.frame-child {
+  top: 0.28rem;
+  left: 0;
+  width: 38.83rem;
+  height: 0.06rem;
+}
+.frame-item {
+  top: 0;
+  left: 38.69rem;
+  border-radius: 50%;
+  width: 0.5rem;
+  height: 0.65rem;
+  z-index: 1;
+}
+.rectangle-parent {
+  align-self: stretch;
+  height: 0.65rem;
+  position: relative;
+}
+.container-frame-inner {
+  height: 1.19rem;
+  width: 39.19rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0.56rem 0 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.our-process {
+  margin: 0;
+  height: 2.44rem;
+  position: relative;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+  display: inline-block;
+}
+.ellipse-div,
+.frame-inner {
+  position: relative;
+  background-color: #ebb82b;
+}
+.frame-inner {
+  height: 0.06rem;
+  flex: 1;
+  min-width: 23.31rem;
+  max-width: 100%;
+}
+.ellipse-div {
+  height: 0.65rem;
+  width: 0.65rem;
+  border-radius: 50%;
+}
+.rectangle-group,
+.sub-frame-a {
+  display: flex;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.rectangle-group {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.06rem 0 1.44rem;
+  transform: rotate(180deg);
+  row-gap: 20px;
+}
+.sub-frame-a {
+  height: 1.19rem;
+  width: 38rem;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0.56rem 0 0;
+}
+.container-frame,
+.subframe-a {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}
+.container-frame {
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2.75rem;
+}
+.subframe-a {
+  width: 103.38rem;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 1.25rem;
+  box-sizing: border-box;
+}
+.rectangle-ellipses-child,
+.rectangle-ellipses-item {
+  position: absolute;
+  top: 1.15rem;
+  left: 27.36rem;
+  width: 27.16rem;
+  height: 30.98rem;
+  object-fit: contain;
+  z-index: 1;
+}
+.rectangle-ellipses-item {
+  top: 1.19rem;
+  left: 82.93rem;
+  width: 26.94rem;
+  height: 30.14rem;
+  z-index: 2;
+}
+.frame-set-a,
+.rectangle-icon {
+  position: absolute;
+  top: 0;
+  left: 0.14rem;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+}
+.rectangle-icon {
+  object-fit: cover;
+  display: none;
+}
+.frame-set-a {
+  background: linear-gradient(
+    0deg,
+    #fff,
+    rgba(255, 255, 255, 0.82) 23.35%,
+    rgba(255, 255, 255, 0)
+  );
+}
+.we-understand-your {
+  position: absolute;
+  top: 21.21rem;
+  left: 2.66rem;
+  line-height: 211.9%;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 18.89rem;
+  height: 2.25rem;
+  z-index: 2;
+}
+.wrapper-rectangle-247-child {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  left: -0.44rem;
+  top: 0.69rem;
+  transform: scale(1.124);
+}
+.we-understand-your1,
+.wrapper-rectangle-247 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper-rectangle-247 {
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+}
+.we-understand-your1 {
+  top: 19.59rem;
+  left: calc(50% - 154.05px);
+  font-size: 0.88rem;
+  line-height: 138%;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  width: 19.23rem;
+  height: 3.81rem;
+  z-index: 1;
+}
+.we-understand-your-exact-requi-parent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+.rectangle-container {
+  position: absolute;
+  top: 2.09rem;
+  left: 57.39rem;
+  border-radius: 20px;
+  width: 22.4rem;
+  height: 25.27rem;
+  background-image: url(./public/rectangle-247@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  z-index: 1;
+  text-align: left;
+}
+.analysis-stage-child {
+  position: absolute;
+  top: 0;
+  left: 0.03rem;
+  border-radius: 524.8px;
+  background-color: #ffb421;
+  box-shadow: 0 2.6px 2.56px rgba(0, 0, 0, 0.39);
+  border: 3.8px solid #fff;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.analysis {
+  position: absolute;
+  top: 0.5rem;
+  left: 2.63rem;
+  font-size: 1rem;
+  line-height: 211.9%;
+  font-weight: 500;
+  font-family: Montserrat;
+  color: #000;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  width: 5rem;
+  z-index: 5;
+}
+.analysis-stage {
+  cursor: pointer;
+  border: 3.8px solid #fff;
+  padding: 0;
+  background-color: #ffb421;
+  position: absolute;
+  top: 0.56rem;
+  left: 63.28rem;
+  border-radius: 524.8px;
+  box-shadow: 0 2.6px 2.56px rgba(0, 0, 0, 0.39);
+  box-sizing: border-box;
+  width: 10.56rem;
+  height: 3.06rem;
+  z-index: 4;
+}
+.analysis-stage:hover {
+  background-color: #cc8000;
+  border: 3.8px solid #e6e6e6;
+  box-sizing: border-box;
+}
+.analysis-ellipse-a {
+  position: absolute;
+  top: 32.33rem;
+  left: 64.56rem;
+  border-radius: 50%;
+  background-color: #242374;
+  width: 1.07rem;
+  height: 1.07rem;
+  z-index: 1;
+}
+.analysis-ellipse-b,
+.stage-two,
+.stage-two1,
+.stage-two2,
+.stage-two3 {
+  position: absolute;
+  top: 32.51rem;
+  left: 66.13rem;
+  border-radius: 50%;
+  background-color: #e8e8e8;
+  width: 0.71rem;
+  height: 0.71rem;
+  z-index: 1;
+}
+.stage-two,
+.stage-two1,
+.stage-two2,
+.stage-two3 {
+  left: 67.34rem;
+}
+.stage-two1,
+.stage-two2,
+.stage-two3 {
+  left: 68.56rem;
+}
+.stage-two2,
+.stage-two3 {
+  left: 69.77rem;
+}
+.stage-two3 {
+  left: 70.98rem;
+}
+.development-mechanism-icon {
+  width: 0.98rem;
+  height: 0.86rem;
+  position: relative;
+}
+.epright,
+.the-comprehensive-stages,
+.we-strive-to {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.epright {
+  top: 31.81rem;
+  left: 72.19rem;
+  border-radius: 21px;
+  background-color: #f4ab1d;
+  width: 2.23rem;
+  height: 2.11rem;
+  overflow: hidden;
+  flex-direction: column;
+  padding: 0.63rem;
+  box-sizing: border-box;
+}
+.the-comprehensive-stages,
+.we-strive-to {
+  top: 38.25rem;
+  left: 44.99rem;
+  font-size: 1rem;
+  width: 50.06rem;
+}
+.the-comprehensive-stages {
+  margin: 0;
+  top: 35.75rem;
+  left: 46.76rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: inherit;
+  color: #0d309e;
+  width: 46.45rem;
+}
+.rectangle-ellipses {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 2.28rem;
+  background-color: #fff;
+  width: 133.91rem;
+  overflow: hidden;
+}
+.frame-x-child,
+.frame-x-item {
+  position: absolute;
+  object-fit: contain;
+}
+.frame-x-child {
+  top: 7.64rem;
+  left: 0;
+  width: 31.44rem;
+  height: 33.49rem;
+  z-index: 2;
+}
+.frame-x-item {
+  top: 7.81rem;
+  left: 110.64rem;
+  width: 31.04rem;
+  height: 32.67rem;
+  z-index: 1;
+}
+.frame-x {
+  height: 48.56rem;
+  width: 141.69rem;
+  position: relative;
+  max-width: 104%;
+  flex-shrink: 0;
+}
+.ellipse-group {
+  width: 136.25rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 103%;
+  flex-shrink: 0;
+}
+.analysis-box,
+.main-frame {
+  display: flex;
+  box-sizing: border-box;
+  text-align: center;
+  color: #000;
+  font-family: Montserrat;
+}
+.analysis-box {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0;
+  max-width: 100%;
+  font-size: 0.75rem;
+}
+.main-frame {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10.94rem 0 8.5rem;
+  gap: 11.19rem;
+  letter-spacing: normal;
+  font-size: 2rem;
+}
+@media screen and (max-width: 1500px) {
+  .container-frame {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1225px) {
+  .main-frame {
+    gap: 11.19rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  .our-process {
+    font-size: 1.63rem;
+  }
+  .frame-inner {
+    min-width: 100%;
+  }
+  .ellipse-div {
+    width: 100%;
+  }
+  .rectangle-group {
+    flex-wrap: wrap;
+  }
+  .sub-frame-a {
+    height: auto;
+  }
+  .container-frame {
+    gap: 2.75rem;
+  }
+  .main-frame {
+    gap: 11.19rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .our-process,
+  .the-comprehensive-stages {
+    font-size: 1.19rem;
+  }
+  .main-frame {
+    gap: 11.19rem;
+  }
+}
